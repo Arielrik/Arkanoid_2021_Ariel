@@ -64,7 +64,12 @@ public class Bola extends GOval{
 			noHaChocado = false;
 		}else if(auxiliar == null){
 			
-		}else{
+		}else if(auxiliar instanceof Ladrillo){// si es un ladrillo
+			if (auxiliar.getY()+getHeight()==posy||auxiliar.getY()==posy){
+				dy *=-1;
+			}else if(auxiliar.getX()+getWidth()==posx||auxiliar.getX()==posx){
+				dx *=-1;
+			}
 			arkanoid.remove(auxiliar);
 			dy *=-1;
 			dx=dx*-1;
