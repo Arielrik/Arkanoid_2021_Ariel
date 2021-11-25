@@ -32,7 +32,7 @@ public class Bola extends GOval{
 
 		}//rebote abajo y arriba
 		
-		if(this.getX()> arkanoid.getWidth()-this.getWidth()||this.getX() <0){
+		if(this.getX()> arkanoid.anchoPantalla -this.getWidth()||this.getX() <0){
 			dx=dx*-1;
 			//this.setFillColor(aleatorio.nextColor());
 			//this.setColor(aleatorio.nextColor());
